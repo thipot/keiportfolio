@@ -19,7 +19,7 @@ jQuery(document).ready(function( $ ) {
   });
 
   // Javascript Chart
-		if($('#javascript').length) {
+		if($('#html').length) {
 
 			var doughnutData = [{
 	        value: 70,
@@ -30,25 +30,25 @@ jQuery(document).ready(function( $ ) {
 	        color: "#3c3c3c"
 	      }
 	    ];
-	    var myDoughnut = new Chart(document.getElementById("javascript").getContext("2d")).Doughnut(doughnutData);
+	    var myDoughnut = new Chart(document.getElementById("html").getContext("2d")).Doughnut(doughnutData);
 		};
 
 		// Bootstrap Chart
-		if($('#bootstrap').length) {
+		if($('#css').length) {
 			var doughnutData = [{
-					value: 90,
+					value: 60,
 					color: "#74cfae"
 				},
 				{
-					value: 10,
+					value: 40,
 					color: "#3c3c3c"
 				}
 			];
-			var myDoughnut = new Chart(document.getElementById("bootstrap").getContext("2d")).Doughnut(doughnutData);
+			var myDoughnut = new Chart(document.getElementById("css").getContext("2d")).Doughnut(doughnutData);
 		}
 
 		// WordPress Chart
-		if($('#wordpress').length) {
+		if($('#javascript').length) {
 			var doughnutData = [{
 					value: 55,
 					color: "#74cfae"
@@ -58,20 +58,34 @@ jQuery(document).ready(function( $ ) {
 					color: "#3c3c3c"
 				}
 			];
-			var myDoughnut = new Chart(document.getElementById("wordpress").getContext("2d")).Doughnut(doughnutData);
+			var myDoughnut = new Chart(document.getElementById("javascript").getContext("2d")).Doughnut(doughnutData);
 		}
 
 		// Photoshop Chart
-		if($('#photoshop').length) {
+		if($('#php').length) {
 			var doughnutData = [{
-					value: 80,
+					value: 65,
 					color: "#74cfae"
 				},
 				{
-					value: 20,
+					value: 35,
 					color: "#3c3c3c"
 				}
 			];
-			var myDoughnut = new Chart(document.getElementById("photoshop").getContext("2d")).Doughnut(doughnutData);
+			var myDoughnut = new Chart(document.getElementById("php").getContext("2d")).Doughnut(doughnutData);
+		}
+
+    // Python Chart
+		if($('#python').length) {
+			var doughnutData = [{
+					value: 70,
+					color: "#74cfae"
+				},
+				{
+					value: 30,
+					color: "#3c3c3c"
+				}
+			];
+			var myDoughnut = new Chart(document.getElementById("python").getContext("2d")).Doughnut(doughnutData);
 		}
 });
